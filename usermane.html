@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button[type="submit"],
+        button.editUser,
+        button.deleteUser {
+            background-color: #007bff;
+            color: #fff;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover,
+        button.editUser:hover,
+        button.deleteUser:hover {
+            background-color: #0056b3;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+ 
+        li button {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>User Management</h1>
+     
+    <h2>Add User</h2>
+    <form id="addUserForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <button type="submit">Add User</button>
+    </form>
+
+     <h2>User List</h2>
+    <ul id="userList"></ul>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const addUserForm = document.getElementById("addUserForm");
+            const userList = document.getElementById("userList");
+
+            addUserForm.addEventListener("submit", function (e) {
+                e.preventDefault();
+                const username = document.getElementById("username").value;
+                const email = document.getElementById("email").value;
+ 
+                const user = {
+                    username,
+                    email
+                };
+ 
+                const newUserItem = document.createElement("li");
+                newUserItem.innerHTML = `
+                    <span>Username: ${user.username}, Email: ${user.email}</span>
+                    <button class="editUser">Edit</button>
+                    <button class="deleteUser">Delete</button>
+                `;
+                userList.appendChild(newUserItem);
+ 
+                addUserForm.reset();
+ 
+                const editButton = newUserItem.querySelector(".editUser");
+                const deleteButton = newUserItem.querySelector(".deleteUser");
+
+                editButton.addEventListener("click", function () {
+                  
+                    const newUsername = prompt("Enter new username:", user.username);
+                    const newEmail = prompt("Enter new email:", user.email);
+
+                    if (newUsername !== null && newEmail !== null) {
+                        user.username = newUsername;
+                        user.email = newEmail;
+                        newUserItem.querySelector("span").textContent = `Username: ${user.username}, Email: ${user.email}`;
+                    }
+                });
+
+                deleteButton.addEventListener("click", function () {
+            
+                    const confirmDelete = confirm("Are you sure you want to delete this user?");
+                    if (confirmDelete) {
+                        userList.removeChild(newUserItem);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

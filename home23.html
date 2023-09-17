@@ -1,0 +1,270 @@
+<html>
+<head>
+    <title>Connect - The Ultimate Job Platform</title>
+</head>
+
+
+<style>
+
+
+#header {
+    background-color: #0099ff;  
+    color: white; 
+    padding: 20px; 
+    text-align: center;  
+}
+
+ 
+#header h1 {
+    font-size: 36px;  
+    font-weight: bold;  
+}
+
+ 
+#header p {
+    font-size: 18px;  
+}
+
+ 
+#header a {
+    color: white;  
+    text-decoration: none;  
+    padding: 10px 20px;  
+    border: 2px solid white;  
+    border-radius: 10px;  
+}
+
+ 
+#header a:hover {
+    background-color: white;  
+    color: #0099ff;  
+}
+
+ 
+#intro {
+    background-color: #f0f0f0;  
+    color: #333333;  
+    padding: 20px;  
+} 
+#intro h2 {
+    font-size: 24px;  
+}
+ 
+#intro p, #intro ul {
+    font-size: 16px;  
+}
+ 
+#intro li {
+    list-style-type: disc;  
+    margin-left: 20px;  
+}
+ 
+#testimonials {
+    background-color: white; 
+    color: #333333;  
+    padding: 20px;  
+}
+ 
+#testimonials h2 {
+    font-size: 24px;  
+}
+ 
+#testimonials p, #testimonials span {
+    font-size: 16px; 
+}
+ 
+.testimonial {
+    display: flex;  
+    align-items: center;  
+    margin-bottom: 10px;  
+}
+ 
+.testimonial img {
+    width: 100px;  
+    height: 100px;  
+    border-radius: 50%;  
+    margin-right: 10px; 
+
+}
+ 
+
+#login {
+    background-color: #f0f0f0;  
+    color: #333333;  
+    padding: 20px; 
+}
+ 
+
+#login h2 {
+    font-size: 24px;  
+}
+ 
+#login p, #login form {
+    font-size: 16px;  
+}
+ 
+
+#login label, #login input, #login select {
+    display: block; 
+    margin-bottom: 10px;   
+}
+ 
+
+#login input {
+    width: 300px;  
+}
+ 
+
+#login input[type="submit"] {
+    width: auto;  
+    background-color:#0099ff ;   
+    color:white ; 
+    border:none ;   
+    border-radius :10 px ; / *Add rounded corners * /
+}
+
+ 
+
+#login input[type="submit"]:hover {
+     background-color:white ; / *White background * /
+     color:#0099ff ; / *Light blue text * /
+}
+
+ 
+
+#footer {
+
+     background-color:#333333 ; / *Dark gray background * /
+     color:white ; / *White text * /
+     padding :20 px ; / *Add some padding * /
+     text-align :center ; / *Center the text * /
+}
+
+#rw{
+font-family: 'Franklin Gothic Medium';
+}
+
+#rw li {
+margin-left: 15px;
+
+}
+
+#rw a{ text-decoration: none;
+
+color: black;}
+
+
+</style>
+
+
+
+
+
+
+<body>
+    <div id="header">
+        <h1> Ranga akazi-Connect</h1>
+        <p>Find your dream job or hire the best talent with Connect, the most advanced and user-friendly job platform in the market.</p>
+        
+   
+    <div class="rw">
+        <li>
+            <a href="Home23.html">HOME</a>
+            <a href="careers.html"  target="_blank"   > Apply JOBS</a>
+            <a href="Postjob.html" target="_blank" >POST JOB</a>
+            <a href="Findresume.html" target="_blank" >FIND RESUME</a>
+            <a href="postresume.html" target="_blank" >POST RESUME</a>
+            <a href="dash.html" target="_blank">Dashboard</a>
+            <a href="aboutus.html" target="_blank" >ABOUT US</a>
+        </li>
+    </div>
+</div>
+
+    <div id="intro">
+        <h2>Why Connect?</h2>
+        <p>Connect is more than just a job board. It is a smart and innovative platform that matches you with the most suitable opportunities or candidates based on your profile, preferences, and skills. Whether you are an employer or an employee, you can benefit from Connect's features and benefits:</p>
+        <ul>
+            <li>Easy and fast registration and profile creation</li>
+            <li>Personalized and relevant job recommendations or candidate suggestions</li>
+            <li>Seamless and secure communication and collaboration tools</li>
+            <li>Feedback and rating system to improve your performance and reputation</li>
+            <li>Access to exclusive resources, events, and opportunities</li>
+        </ul>
+    </div>
+    <div id="testimonials">
+        <h2>What Our Users Say</h2>
+        <p>Don't take our word for it. Hear from some of our satisfied users who have found their dream jobs or hired the best talent with Connect.</p>
+        <div class="testimonial">
+            <img src="blurface.png" alt="User 1">
+            <p>"Connect helped me land my dream job as a Inyange industry at Google. I was able to showcase my skills and portfolio through my profile and get matched with the perfect opportunity. Connect also provided me with useful tips and feedback throughout the application process. I highly recommend Connect to anyone looking for a job in the tech industry."</p>
+            <span>- John Kalangwa, electrical Engineer at Inyange</span>
+        </div>
+        <div class="testimonial">
+            <img src="blurface.png" alt="User 2">
+            <p>"Connect is the best platform for hiring talent in the market. I was able to find and hire qualified and experienced candidates for various positions in my company. Connect also made it easy to communicate and collaborate with the candidates and track their progress. I would definitely use Connect again for my future hiring needs."</p>
+            <span>- Jane Doe, CEO of ABC Inc.</span>
+        </div>
+    </div>
+    <div id="login">
+        <h2>Login</h2>
+        <p>If you already have an account, please login below.</p>
+        <form action="login.php" method="post">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <label for="role">Role:</label>
+            <select id="role" name="role" required>
+                <option value="">Select your role</option>
+                <option value="employer">Employer</option>
+                <option value="employee">Employee</option>
+                <option value="admin">Administrator</option>
+            </select>
+            <input type="submit" value="Login">
+        </form>
+        <p>If you don't have an account yet, please sign up here: <a href="signup.html">Sign Up</a></p>
+
+    </div>
+
+    </div>
+
+    </div>
+
+    </div>
+
+    </div>
+
+    </div>
+
+    </div>
+
+    </div>
+
+    </div>
+
+    </div>
+
+    </div>
+
+    </div>
+
+    </div>
+
+    </div>
+
+    </div>
+
+    </div>
+
+
+<div id="footer">
+<p>Contact us: Email | Phone | Facebook | Twitter | Instagram</p>
+<p>Privacy Policy | Terms of Service | © 2023 Connect. All rights reserved.</p>
+
+
+</body>
+
+
+</html>
+
+

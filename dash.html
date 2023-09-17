@@ -1,0 +1,226 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+
+#header {
+    background-color: #0099ff;  
+    color: white; 
+    padding: 20px; 
+    text-align: center;  
+}
+
+ 
+#header h1 {
+    font-size: 36px;  
+    font-weight: bold;  
+}
+
+ 
+#header p {
+    font-size: 18px;  
+}
+
+ 
+#header a {
+    color: white;  
+    text-decoration: none;  
+    padding: 10px 20px;  
+    border: 2px solid white;  
+    border-radius: 10px;  
+}
+
+ 
+#header a:hover {
+    background-color: white;  
+    color: #0099ff;  
+}
+ 
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-gap: 10px;
+        }
+        .sidebar { 
+            background-color: gray;
+            padding: 20px;
+            font-size: 20px;
+            font-family: 'Gill Sans';
+        }
+        .main {
+            background-color: #ffffff;
+            padding: 20px;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+        }
+        .avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .name {
+            font-weight: bold;
+        }
+        .menu {
+       
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .menu li {
+            margin-bottom: 10px;
+        }
+        .menu li a {
+            text-decoration: none;
+            color: #333333;
+        }
+        .menu li a:hover {
+            color: #000000;
+        }
+        .card {
+            border: 1px solid #cccccc;
+            margin-bottom: 10px;
+        }
+        .card-header {
+            background-color: #eeeeee;
+            padding: 10px;
+            font-weight: bold;
+        }
+        .card-body {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+
+<div id="header">
+        <h1> Ranga akazi-Connect</h1>
+        <p>Find your dream job or hire the best talent with Connect, the most advanced and user-friendly job platform in the market.</p>
+        
+   
+    <div class="rw">
+        <li>
+            <a href="home23.html">HOME</a>
+            <a href="careers.html"  target="_blank"   > Apply Jobs</a>
+             <a href="Postjob.html" target="_blank" >POST JOB</a>
+            <a href="Findresume.html" target="_blank" >FIND RESUME</a>
+            <a href="postresume.html" target="_blank" >POST RESUME</a>
+            <a href="usermane.html">Account management</a>
+            <a href="aboutus.html" target="_blank" >ABOUT US</a>
+        </li>
+    </div>
+</div>
+
+
+    <div class="container">
+        <div class="sidebar">
+            <div class="profile">
+                <img src="blurface.png" alt="Avatar" class="avatar">
+                <div class="name">John Doe</div>
+            </div>
+            <ul class="menu">
+                <li><a href="/dashboard">Dashboard</a></li>
+                <li><a href="/jobs">Jobs</a></li>
+                <li><a href="/applications">Applications</a></li>
+                <li><a href="/messages">Messages</a></li>
+                <li><a href="/settings">Settings</a></li>
+                <li> <a href="Home1.html">Back home</a></li>
+                <li><a href="Home1.html">Logout</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <h1>Dashboard</h1>
+            <p>Welcome to Ranga akazi, the website that helps you find the best job opportunities for your skills and interests.</p>
+            <div class="card">
+                <div class="card-header">Your Profile</div>
+                <div class="card-body">
+                    <p>Your profile is complete by 80%. To increase your chances of getting hired, please update your profile with the following information:</p>
+                    <ul>
+                        <li>Add your education details</li>
+                        <li>Add your work experience details</li>
+                        <li>Add your portfolio or samples of your work</li>
+                    </ul>
+                    <p><a href="/profile/edit">Edit your profile</a></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">Your Jobs</div>
+                <div class="card-body">
+                    <p>You have 10 new job opportunities that match your skills and interests. Here are some of them:</p>
+                    <ul>
+                        <li><a href="/jobs/1">Web Developer at ABC Inc.</a></li>
+                        <li><a href="/jobs/2">Graphic Designer at XYZ Ltd.</a></li>
+                        <li><a href="/jobs/3">Content Writer at LMN Co.</a></li>
+                        <li><a href="/jobs/4">Data Analyst at PQR Inc.</a></li>
+                        <li><a href="/jobs/5">Marketing Manager at EFG Ltd.</a></li>
+                    </ul>
+                    <p><a href="/jobs">See more jobs</a></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">Your Applications</div>
+                <div class="card-body">
+                    <p>You have applied for 5 jobs in the last month. Here are the status of your applications:</p>
+                    <table border="1" cellpadding="10" cellspacing="0">
+                        <tr>
+                            <th>Job Title</th>
+                            <th>Company</th>
+                            <th>Date Applied</th>
+                            <th>Status</th>
+                        </tr>
+                        <tr>
+                            <td>Web Developer at ABC Inc.</td>
+                            <td>ABC Inc.</td>
+                            <td>15 Sep 2023</td>
+                            <td>Pending</td>
+                        </tr>
+                        <tr>
+                            <td>Graphic Designer at XYZ Ltd.</td>
+                            <td>XYZ Ltd.</td>
+                            <td>12 Sep 2023</td>
+                            <td>Rejected</td>
+                        </tr>
+                        <tr>
+                            <td>Content Writer at LMN Co.</td>
+                            <td>LMN Co.</td>
+                            <td>10 Sep 2023</td>
+                            <td>Interview Scheduled</td>
+                        </tr>
+                        <tr>
+                            <td>Data Analyst at PQR Inc.</td>
+                            <td>PQR Inc.</td>
+                            <td>8 Sep 2023</td>
+                            <td>Hired</td>
+                        </tr>
+                        <tr>
+                            <td>Marketing Manager at EFG Ltd.</td>
+                            <td>EFG Ltd.</td>
+                            <td>5 Sep 2023</td>
+                            <td>Pending</td>
+                        </tr>
+                    </table>
+                    <p><a href="/applications">View all your applications</a></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">Your Messages</div>
+                <div class="card-body">
+                    <p>You have 3 unread messages from potential employers. Here are the previews of your messages:</p>
+                    <ul>
+                        <li><b>LMN Co.</b>: Hi John, we are impressed by your application and would like to invite you for an online interview on 20 Sep 2023 at 10:00 AM. Please confirm your availability and we will send you the link to join the interview.</li>
+                        <li><b>PQR Inc.</b>: Congratulations John, you have been selected for the position of Data Analyst at PQR Inc. We are excited to have you on board. Please reply to this message with your acceptance and we will send you the offer letter and other details.</li>
+                        <li><b>ABC Inc.</b>: Hi John, thank you for applying for the position of Web Developer at ABC Inc. We are currently reviewing your application and will get back to you soon. Please stay tuned for further updates.</li>
+                    </ul>
+                    <p><a href="/messages">Read and reply to your messages</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
